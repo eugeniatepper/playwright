@@ -25,7 +25,7 @@ test.describe('Form Layouts Page', () => {
         // locator assertion
         await expect(usingTheGridEmailInput).toHaveValue('test2@test.com')
     })
-    test.only('radio button', async({page}) => {
+    test('radio button', async({page}) => {
         const usingTheGridForm = page.locator('nb-card', {hasText: "Using the Grid"})
         
         // because radio button is visually-hidden, we cannot click on it easily, this is why force is needed
